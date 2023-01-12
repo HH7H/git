@@ -1,4 +1,7 @@
-import requests,random,execjs,json,time
+import requests,random,json,time
+
+ID = '2132531310'
+token = '5105584144:AAGUqOnoYk78YYWypvIDt2cXLutmddBAHA4'
 
 def auto_set(username):
     ID = '2132531310'
@@ -17,9 +20,8 @@ def auto_set(username):
         exit()
 
 
-Cookies = input("cookies:")
-
-tt_headers = {'Host': 'www.tiktok.com','Connection': 'keep-alive','Cookie': Cookies,'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36',}
+Cookies = str(input('Cookies:'))
+"bm_sv=46832DCFDC148185F7E9074810E3906C~YAAQh30TAkpM0JGFAQAA82V4nBKXK2Skl/wmy0RrgMK/pBNqSC9uIEmksW1MBlh+HPBPrB77lgDDPj6sC8JP2jO0NmTSo97woEF6L89ZYs7ww8pFhI6YoJbHdzaOhaaS6SZv9PIoZMhnmEbL1vTkfMsti24MEVvDAfRoMIQdljwbcli8SVIQ3T/u7FtQaC9uidnB6sS6Z8N9kvWNtBkmoEuiN+1v7NjrmGKyFtJW9g2zUtrRfIacBqJTA5T24fio~1; msToken=g_tiaymR7IHb_dw4VkZHso8QOABaQ0Xw-3FX_WEUdcI00xfaJg7krU9IzQmKS40Wvj8aCD4XcdHbSUCERrEzBzVGscjJ9pU7oJl5KAv_jU29k8elqLslWJ2anzcu7tCgJYtxeVXiUgvvsmE=; _abck=AE7489E3C37DF0D69AF4979ED6B3AA77~-1~YAAQh30TAtlL0JGFAQAAHGF4nAl3lonVhyvd8MBrllQS2ez6GSbg2RXIp4PYuoWtnVyOuCqwaTWIanQ6yiRtPZPQr7vuaFpi554WMmUMhaZWoG0f2JuRwuKSysQcY/tKsAMQtCZVtFMcxuTBKq99RECHYJWd9rZ1yC/haiZPmTxKtZ0O8MKB9qy+zulNLFyLCge/pjbRLc1rVXXSxjGx516W/pUtjWK6ODrlT9LKKHIMdSphTUyijcylgTBJcciEkTjgKviU6BEqa2q5gzpeEKmOWZ/tbrIFmvxEbmX8PqMX3PyMq0whx/1VOKvvycD88PJ2wH6ZMeU12HzS432jebgOA8zcrBaPj5QPE3eBBM6NpO0OcfEoG4ZYbHcQ38zn8BRryqfocHIc4t5wuWSxJQkdUfAs8q6GMQ==~0~-1~-1; msToken=30xBIBg-buR8VeIJNxEuoUML3knVschXxS7Nv8wb1VGUrKwGihJnQom-AwZ59XCowuBopb1K7uum4JJw5SaK1zP-ef5oWzBUKcbADyqSjTYaGXhONzOdn8uij-tREdoNMP0ssNZt1V4rkd0=; odin_tt=00e9aca1537bc30701ff922511eef473c671fe2e2aa3db2f0e026fc7e8dd63aaef2271ba2f5844615c18c7eb08e54b2642530e6dcf0138b1e746085479b899bae60904a38f68d5ca21a5ec156ed68f55; store-country-code=iq; store-country-code-src=uid; store-idc=maliva; tt-target-idc=useast1a; ttwid=1%7CQs6d2ynLwTp5dJqXTWkofjX2idTUq8ZrkNvTVBzjf9w%7C1673367403%7C592cbae710b148df76b7028f3aad724d904215720da3ab6f3d622d5b18994953; __tea_cache_tokens_1988={%22_type_%22:%22default%22%2C%22user_unique_id%22:%227187058048485246470%22%2C%22timestamp%22:1673367368274}; passport_fe_beating_status=true; tiktok_webapp_theme=light; tt_chain_token=RyElH8SphfAH2E4y2DzjLA==; tt-target-idc-sign=WSbHOiMTZVQNAJvqrbu_DaQxamR3wJKBsn0BOhtsVXB8F0w-VLNRUb2WR01YuakqfgDuxEP5UVqMYhVAIh7PELZZvMVqA_wcFIUhPbBi8xdXaagP3qVfQ4q77gSdQpzivrkHko9kF1jtxdtnNbUMVG4euO6H9GDJmp4GhwC1S5d5SlLftqgvbxJbtcE_tilIw2H-n2tGyZVYGdzfugmp2A_B6Ft2bYUF8Ow-M74COWcIlUiDYD0afyI89yZohnC08_Gc2oXygAUtLSPLbCe5pjY1BLN4URQVtObBjoz6OrHbNXtSr13GWbK8UK50bUNxYbEUXApro7bsvdYyg1tNxADZjYG7bT5SH9OLc9xsYu2Vh_RMC_rwBO4TF-4A7nTLSFktv31fm5rvIu22z-He1jbHsL9AY0IJqMUXk0s1HML8ycLp8izOQbdbT0XfscZf5LrGdHChHayorojWWuO14adUprq3XwGbnbtK14Xoy7TJV1qfMpYsiDsALiEuABC2; cmpl_token=AgQQAPPdF-RO0rI5FGG0o90_-dwWBMeMf4QsYMoXxA; sessionid=39c6f07f471e2a865826c8b8e1a18a16; sessionid_ss=39c6f07f471e2a865826c8b8e1a18a16; sid_guard=39c6f07f471e2a865826c8b8e1a18a16%7C1673367389%7C5184000%7CSat%2C+11-Mar-2023+16%3A16%3A29+GMT; sid_tt=39c6f07f471e2a865826c8b8e1a18a16; sid_ucp_v1=1.0.0-KGY1MTQ4MzM5ZTYyZDNhMzE0Yjk2NWQ0ZDMxZjhmOTFkNmJjMTg3ZDUKIAiGiMTk49j-g2IQ3Z72nQYYswsgDDCK9p-QBjgEQOoHEAMaBm1hbGl2YSIgMzljNmYwN2Y0NzFlMmE4NjU4MjZjOGI4ZTFhMThhMTY; ssid_ucp_v1=1.0.0-KGY1MTQ4MzM5ZTYyZDNhMzE0Yjk2NWQ0ZDMxZjhmOTFkNmJjMTg3ZDUKIAiGiMTk49j-g2IQ3Z72nQYYswsgDDCK9p-QBjgEQOoHEAMaBm1hbGl2YSIgMzljNmYwN2Y0NzFlMmE4NjU4MjZjOGI4ZTFhMThhMTY; uid_tt=e1a5dc861f9f74418317ab66b82d2f731d06e38113528552773c21ddb2f98948; uid_tt_ss=e1a5dc861f9f74418317ab66b82d2f731d06e38113528552773c21ddb2f98948; passport_csrf_token=1697d4754e81852078cb9e4ae8526c8d; passport_csrf_token_default=1697d4754e81852078cb9e4ae8526c8d; ak_bmsc=FD4C07D5E2D05FBD720FF54E9D6B3C1A~000000000000000000000000000000~YAAQnX0TAnEYOJuFAQAAvLF3nBIjQzWm1GCPLR8EBP3gBtuFVyb2V+aLLaR/CDqJORUmO6xCD7hcgZK/6ndnqi2JfFE1oPRbhY9R2BqbHjQ9535dnIuMZzcPCt8tgWjAf4rrJgYZTglk+8l31cW8fkbp3FL096DXsbfVP4z/lpUzDT/bzbedOS3ClvBeJCtNaDBJBbFtqFI8uvJTboauoNUPQLAH5J0+p02uBs0eFokjaoosfghG94JSpQyNlecIHkfYELyhXtXTgUX2KQR0dZ5JG15H85GGtzonvxpA2XkEwgN2baXaDXcGcICQhIY7j/vleN99Y9Sz8sFYOBk5jyRGFXyWMrfr5SpuQI+JqqoqmSGzACPYDJtyg5cbscEolONKuAL19qfeWCfzEWVJOeJH1vbeXeliwrXZOW2tx34ItfojZlelwygq7oNIzDc0BgEJzhFDdVbsXVgo4BkyeaIujwVy2gSsF+fXJe4OKQHx8+7Zh/k1vlE=; bm_sz=852BA28CAED649921BC970E08DE94E18~YAAQnX0TAscXOJuFAQAAMal3nBIbGuznncHYoH/A1wFlKBW4su80Y4lqqvEMWYSSumDRkSKXIrzuPlOag68TEXJHHgPC+eOXj4GvPWJe3PBWS/6YFlY58LrAZGkWSS0wXui/2mSgmsgCprLFzS8rOdiAFp3q8/5qN5ttzGffm/ECTHxc0/tVu+OEYVmRHWCGH3rdw1Dq5tHsHdanZn415c7+carNNaQZSb4ni6522GvnFcVmONZncft2NP8IBkGSwOMQkvUPDOxgED2oZPJmqM8aZZuom666twcQw1HO4UzhzJ4=~4337714~4339763; tt_csrf_token=QG8vl6b0-aJLCRF9Rukb6NzhXbBOPy8Q6mzM"
 
 
 N = 1
@@ -27,12 +29,13 @@ R,G,Y,W = '\x1b[1;31m','\x1b[1;32m','\x1b[1;33m','\x1b[0m'
 Length = int(input('Length:'))
 while True:
     username = str(''.join(random.choice('qwerfdsazxc_v4132tgbu.jmnhy756_iklop089.') for x in range(Length)))
-    params = f'aid=1988&app_language=en&app_name=tiktok_web&browser_language=en-US&unique_id={username}'
-    bogus = execjs.compile(open('main.js','r').read()).call('_0x32d649',params)
-    response = requests.get(url='https://www.tiktok.com/api/uniqueid/check/?'+params+'&X-Bogus='+bogus,headers=tt_headers).json()
+    url = f'https://www.tiktok.com/api/uniqueid/check/?aid=1988&app_language=en&app_name=tiktok_web&browser_language=en-US&unique_id={username}'
+    response = requests.post('https://tt.hh7h.repl.co/api/signer/',data={"Token": "main-HH7H@api","url": url}).json()
+    response = requests.get(url=response["signed_url"],headers={"User-Agent": response["userAgent"],"Cookie": Cookies}).json()
     try:
         if response['is_valid'] == True:
             print(f'{W}{N}: {W}[{G}Available{W}]: {username}');N += 1
+            requests.post(f"https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&parse_mode-Markdownv2&text=Available: {username}\nauto_set: wait")
             auto_set(username)
             break
         elif response['is_valid'] == False:
